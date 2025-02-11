@@ -30,8 +30,8 @@ This project provides a Streamlit application for training and testing custom Na
 1.  **Clone the repository:**
 
     ```bash
-    git clone <your_repository_url>
-    cd <your_repository_directory>
+    git clone https://github.com/yazanrisheh/Custom-NER-model.git NER_MODEL
+    cd NER_MODEL
     ```
     (If you're not using git, you can download the files as a ZIP and extract them.)
 
