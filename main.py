@@ -71,7 +71,7 @@ def main():
         for label in st.session_state.allowed_labels:
             if label_cols[col_index % 3].button(f"{label} 🗑️", key=f"del_label_{label}"):
                 st.session_state.allowed_labels.remove(label)
-                st.experimental_rerun()
+                st.rerun()
             col_index += 1
 
     # --- Initialize train_data ---
