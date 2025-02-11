@@ -4,24 +4,6 @@ import spacy
 import json
 import re
 
-def inject_custom_css():
-    custom_css = """
-    <style>
-        .css-1d391kg {  
-            background-color: #f0f8ff;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            color: #2e6c80;
-        }
-        .custom-instructions {
-            font-size: 1.1em;
-            line-height: 1.5;
-            color: #333;
-        }
-    </style>
-    """
-    st.markdown(custom_css, unsafe_allow_html=True)
-
 def main():
     st.title("Custom NER Training with Streamlit")
 
