@@ -121,15 +121,38 @@ def main():
         uploaded_file = st.file_uploader("Upload JSON file", type=["json"])
         if uploaded_file is not None:
             try:
-                train_data = json.load(uploaded_file)
-                if not isinstance(train_data, list):
+                data = json.load(uploaded_file)
+                if not isinstance(data, list):
                     raise ValueError("Uploaded JSON must be a list of training examples.")
-                for example in train_data:
-                    if not isinstance(example, tuple) or len(example) != 2 or not isinstance(example[0], str) or not isinstance(example[1], dict) or "entities" not in example[1]:
-                        raise ValueError("Invalid training data format in JSON.")
+                validated_data = []
+                for example in data:
+                    if isinstance(example, dict):
+                        # New format: dictionary with keys "text" and "entities"
+                        if "text" not in example or "entities" not in example:
+                            raise ValueError("Each training example dict must contain keys 'text' and 'entities'.")
+                        text_part = example["text"]
+                        entities = example["entities"]
+                        if not isinstance(entities, list):
+                            raise ValueError("The 'entities' field must be a list.")
+                        validated_data.append((text_part, {"entities": entities}))
+                    elif isinstance(example, (list, tuple)):
+                        # Existing format: list/tuple with 2 elements
+                        if len(example) != 2:
+                            raise ValueError("Each training example must be a list or tuple with 2 elements.")
+                        text_part, annotation_part = example
+                        if not isinstance(text_part, str):
+                            raise ValueError("The first element of each training example must be a string.")
+                        if not isinstance(annotation_part, dict) or "entities" not in annotation_part:
+                            raise ValueError("The second element of each training example must be a dictionary with an 'entities' key.")
+                        validated_data.append((text_part, annotation_part))
+                    else:
+                        raise ValueError("Training example must be a dict or a list/tuple.")
+                train_data = validated_data
+                st.success("JSON file loaded successfully!")
             except Exception as e:
                 st.error(f"Error loading JSON: {e}")
                 train_data = []
+
 
     elif input_method == "Generate Sample Dataset":
         train_data = [

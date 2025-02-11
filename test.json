@@ -1,0 +1,206 @@
+[
+    {
+        "text": "Apple Inc. reported revenue of $383.3 billion for the fiscal year 2023.",
+        "entities": [
+            [0, 10, "COMPANY"],
+            [26, 33, "METRIC"],
+            [37, 50, "MONEY"],
+            [63, 72, "DATE"]
+        ]
+    },
+    {
+        "text": "Microsoft's net profit reached $72.7 billion in 2023, with a CAGR of 15% over the past five years.",
+        "entities": [
+            [0, 11, "COMPANY"],
+            [12, 22, "METRIC"],
+            [30, 43, "MONEY"],
+            [47, 51, "DATE"],
+            [59, 63, "METRIC"],
+            [67, 70, "PERCENT"]
+        ]
+    },
+    {
+        "text": "Alphabet Inc. saw its revenue grow to $282.8 billion, representing a 9% increase year-over-year.",
+        "entities": [
+            [0, 13, "COMPANY"],
+            [24, 31, "METRIC"],
+            [39, 52, "MONEY"],
+            [72, 74, "PERCENT"]
+        ]
+    },
+    {
+        "text": "Amazon's operating income was $24.9 billion, while its net sales were $514.0 billion.",
+        "entities": [
+            [0, 8, "COMPANY"],
+            [9, 25, "METRIC"],
+            [30, 43, "MONEY"],
+            [54, 63, "METRIC"],
+            [69, 82, "MONEY"]
+        ]
+    },
+    {
+        "text": "Tesla, Inc.'s gross profit margin was approximately 25.6% in Q3 2023.",
+        "entities": [
+            [0, 11, "COMPANY"],
+            [16, 33, "METRIC"],
+            [49, 54, "PERCENT"],
+            [58, 65, "DATE"]
+        ]
+    },
+    {
+        "text": "Facebook, now Meta Platforms, Inc., reported a net income of $39.4 billion.",
+        "entities": [
+            [0, 8, "COMPANY"],
+            [14, 33, "COMPANY"],
+            [44, 54, "METRIC"],
+            [58, 71, "MONEY"]
+        ]
+    },
+    {
+        "text": "The company's EBITDA for 2022 was $12.5 billion, a significant increase from the previous year.",
+        "entities": [
+            [14, 20, "METRIC"],
+            [25, 29, "DATE"],
+            [34, 47, "MONEY"]
+        ]
+    },
+    {
+        "text": "Nvidia Corporation's free cash flow exceeded $8 billion in the last quarter.",
+        "entities": [
+            [0, 18, "COMPANY"],
+            [21, 35, "METRIC"],
+            [44, 54, "MONEY"]
+        ]
+    },
+    {
+        "text": "Salesforce's revenue is projected to grow at a CAGR of 20% between 2023 and 2028.",
+        "entities": [
+            [0, 10, "COMPANY"],
+            [13, 20, "METRIC"],
+            [45, 49, "METRIC"],
+            [53, 56, "PERCENT"],
+            [65, 69, "DATE"],
+            [74, 78, "DATE"]
+        ]
+    },
+    {
+        "text": "Adobe Inc. achieved a record quarterly revenue of $4.82 billion.",
+        "entities": [
+            [0, 9, "COMPANY"],
+            [29, 36, "METRIC"],
+            [40, 53, "MONEY"]
+        ]
+    },
+    {
+        "text": "In 2024, the company aims to reduce its operating expenses by 5%.",
+        "entities": [
+            [3, 7, "DATE"],
+            [40, 58, "METRIC"],
+            [62, 64, "PERCENT"]
+        ]
+    },
+    {
+        "text": "The company's diluted EPS for Q1 2024 was $2.50.",
+        "entities": [
+            [14, 25, "METRIC"],
+            [30, 37, "DATE"],
+            [42, 47, "MONEY"]
+        ]
+    },
+    {
+        "text": "Walmart's annual revenue exceeded $600 billion, making it the largest company by revenue.",
+        "entities": [
+            [0, 7, "COMPANY"],
+            [10, 16, "METRIC"],
+            [26, 39, "MONEY"]
+        ]
+    },
+    {
+        "text": "Costco reported a net income of $1.5 billion for the quarter ending May 2024.",
+        "entities": [
+            [0, 6, "COMPANY"],
+            [17, 27, "METRIC"],
+            [31, 42, "MONEY"],
+            [61, 68, "DATE"]
+        ]
+    },
+    {
+        "text": "The company's R&D expenses increased by 12% year-over-year, reaching $2.1 billion.",
+        "entities": [
+            [14, 26, "METRIC"],
+            [42, 45, "PERCENT"],
+            [66, 78, "MONEY"]
+        ]
+    },
+    {
+        "text": "Their total assets are valued at over $1 trillion.",
+        "entities": [
+            [6, 18, "METRIC"],
+            [33, 44, "MONEY"]
+        ]
+    },
+    {
+        "text": "The company's market capitalization exceeds $800 billion.",
+        "entities": [
+            [14, 34, "METRIC"],
+            [43, 56, "MONEY"]
+        ]
+    },
+    {
+        "text": "Earnings per share (EPS) for the company were reported at $4.25.",
+        "entities": [
+            [0, 18, "METRIC"],
+            [55, 60, "MONEY"]
+        ]
+    },
+    {
+        "text": "The dividend yield for the stock is currently 2.8%.",
+        "entities": [
+            [4, 18, "METRIC"],
+            [43, 47, "PERCENT"]
+        ]
+    },
+    {
+        "text": "The company's debt-to-equity ratio is 0.75.",
+        "entities": [
+            [14, 33, "METRIC"],
+            [37, 41, "RATIO"]  
+        ]
+    },
+    {
+        "text": "Return on equity (ROE) for the last fiscal year was 18.5%.",
+        "entities": [
+            [0, 17, "METRIC"],
+            [42, 47, "PERCENT"]
+        ]
+    },
+        {
+        "text": "The Price-to-Earnings Ratio (P/E Ratio) is currently at 25.3.",
+        "entities": [
+            [4, 30, "METRIC"],
+            [46, 50, "RATIO"]
+        ]
+    },
+    {
+        "text": "The company projects a revenue growth of 7-9% for the next fiscal year.",
+        "entities": [
+            [24, 38, "METRIC"],
+            [42, 46, "PERCENT"]
+        ]
+    },
+    {
+        "text": "Operating margin improved to 14.2% from 12.8% last year.",
+        "entities": [
+            [0, 16, "METRIC"],
+            [27, 32, "PERCENT"],
+            [38, 43, "PERCENT"]
+        ]
+    },
+    {
+        "text": "The current ratio for the company stands at 1.2, indicating good short-term liquidity.",
+        "entities": [
+            [4, 17, "METRIC"],
+            [44, 47, "RATIO"]
+        ]
+    }
+]
