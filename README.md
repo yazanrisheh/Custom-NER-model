@@ -35,16 +35,6 @@ This project provides a Streamlit application for training and testing custom Na
     ```
     (If you're not using git, you can download the files as a ZIP and extract them.)
 
-2.  **Install dependencies:**
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-    You'll also need to download the spaCy model `en_core_web_lg`
-    ```bash
-     python -m spacy download en_core_web_lg
-    ```
- 
 
 ### Running the Application
 
@@ -54,11 +44,29 @@ This project provides a Streamlit application for training and testing custom Na
     cd ner_project
     ```
 
-2.  **Run the Streamlit app:**
+2. **Create Virtual Environment:**
+    ```bash
+    python -m venv venv
+    ```
+    ```
+    venv/Scripts/Activate
+    ```
+
+3. **Install requirements and model:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    You'll also need to download the spaCy model `en_core_web_lg`
+    ```bash
+     python -m spacy download en_core_web_lg
+    ```
+
+4.  **Run the Streamlit app:**
 
     ```bash
     streamlit run main.py
     ```
+
 
 This will open the application in your web browser.
 
