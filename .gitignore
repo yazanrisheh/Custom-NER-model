@@ -1,0 +1,4 @@
+VE_ner/
+custom_ner_model/
+__pycache__/
+old.py
